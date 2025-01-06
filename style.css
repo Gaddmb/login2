@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #c39c60;
+  --background-color: #fefaf3;
+  --text-color: #3e3e3e;
+  --input-bg: #fff;
+  --input-border: #ccc;
+  --google-color: #4285f4;
+  --apple-color: #000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.btn-login {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.btn-login:hover {
+  background: #b98b52;
+}
+
+.or-divider {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.btn-google,
+.btn-apple {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-google {
+  background: var(--google-color);
+}
+
+.btn-google:hover {
+  background: #357ae8;
+}
+
+.btn-apple {
+  background: var(--apple-color);
+}
+
+.btn-apple:hover {
+  background: #333;
+}
+
+.signup-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
